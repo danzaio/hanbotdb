@@ -1,0 +1,81 @@
+header {
+    margin: 12px 0;
+    display: block;
+    text-align: center;
+    color:  var(--color-heading);
+}
+header h1, header h2, header h3 {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 12px;
+}
+
+header .change-language {
+    display: block;
+    min-width: 36px;
+    height: 36px;
+    line-height: 36px;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+}
+
+header .change-data-source {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    position: absolute;
+    right: 4rem;
+    top: 0.5rem;
+}
+
+.search-input{
+    margin: 12px 0;
+    text-align: center;
+}
+
+.search-input input {
+    outline: none;
+    border: 1px solid transparent;
+    padding: 5px 20px;
+    font-size: 28px;
+    border-radius: 8px;
+    font-weight: 100;
+    transition: .2s border;
+    background-color: var(--color-background-soft);
+    color: var(--color-text);
+    margin: 12px 0;
+    max-width: 80vw;
+    text-align: center;
+}
+
+.search-input input:focus {
+    border: 1px solid rgba(15, 21, 51, 0.5);
+    transition: .2s border
+}
+
+
+.hero-icon {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    list-style: none;
+    margin: 0 0 15px 15px;
+    font-size: 12px;
+    width: 88px;
+    height: 96px;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.hero-icon:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 5px rgba(15, 21, 51, 0.5);;
+    border-color: #3d66be;
+    transition: .2s ease-in-out
+}
+
+.hero-icon img {
+    width: 64px;
+    height: 64px;
+}
