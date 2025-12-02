@@ -56,7 +56,7 @@ const scatterData = computed(() => {
 
   return {
     datasets: [{
-      label: 'Champions',
+      label: L('Champions'),
       data: dataPoints,
       backgroundColor: 'rgba(11, 196, 226, 0.6)',
       borderColor: '#0bc4e2',
@@ -67,7 +67,7 @@ const scatterData = computed(() => {
   }
 })
 
-const scatterOptions = {
+const scatterOptions = computed(() => ({
   ...commonOptions,
   plugins: {
     ...commonOptions.plugins,
@@ -76,16 +76,16 @@ const scatterOptions = {
       callbacks: {
         label: (context) => {
           const point = context.raw;
-          return `${point.champion}: Pick ${point.x.toFixed(2)}%, Win ${point.y.toFixed(2)}%`;
+          return `${point.champion}: ${L('Pick')} ${point.x.toFixed(2)}%, ${L('Win')} ${point.y.toFixed(2)}%`;
         }
       }
     }
   },
   scales: {
-    x: { ...commonOptions.scales.x, title: { display: true, text: 'Pick Rate (%)', color: '#94a3b8' } },
-    y: { ...commonOptions.scales.y, title: { display: true, text: 'Win Rate (%)', color: '#94a3b8' } }
+    x: { ...commonOptions.scales.x, title: { display: true, text: L('Pick Rate (%)'), color: '#94a3b8' } },
+    y: { ...commonOptions.scales.y, title: { display: true, text: L('Win Rate (%)'), color: '#94a3b8' } }
   }
-}
+}))
 
 </script>
 

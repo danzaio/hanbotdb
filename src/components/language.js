@@ -12,7 +12,25 @@ const t = {
     'Shard DB': 'Hanbot Database',
     'Developer': '开发者',
     'Pick rate': '选率',
-    'Win rate': '胜率'
+    'Win rate': '胜率',
+    'Hanbot Database': 'Hanbot 数据库',
+    'Shard View': '合集视图',
+    'Search champions...': '搜索英雄...',
+    'All Roles': '所有定位',
+    'Fighter': '战士',
+    'Tank': '坦克',
+    'Mage': '法师',
+    'Assassin': '刺客',
+    'Support': '辅助',
+    'ADC': '射手',
+    'Sort by Pick Rate': '按选率排序',
+    'Sort by Win Rate': '按胜率排序',
+    'Meta Analysis: Win vs Pick Rate': '环境分析：胜率 vs 选率',
+    'Champions': '英雄',
+    'Pick Rate (%)': '选率 (%)',
+    'Win Rate (%)': '胜率 (%)',
+    'Pick': '选率',
+    'Win': '胜率'
 };
 
 export const language = ref("EN")
